@@ -1,6 +1,6 @@
 .overflow-wrapper {
-  height: $VIEW_HEIGHT;
-  width: $VIEW_WIDTH;
+  height: $VIEW_HEIGHT - 10vh;
+  width:  $VIEW_WIDTH;
   overflow: scroll;
 }
 
@@ -27,7 +27,7 @@
 
       p {
 
-        @include ABSOLUTELY( 1vmin, auto, auto, 1/3 * $PROJ_ITEM_WIDTH );
+        @include ABSOLUTELY( 0px, auto, auto, 1/3 * $PROJ_ITEM_WIDTH );
         &.one-third {
 
           transition: all .5s ease;
@@ -36,16 +36,30 @@
       }
       div {
         @include ABSOLUTELY( auto, auto, 0px, 1/3 * $PROJ_ITEM_WIDTH );
+        a {
+
+          transition: all .2s linear;
+
+        &:hover {
+
+            color: $COLOR_LIGHT;
+            font-size: 1.6vw;
+            transition: all .2s linear;
+
+          }
+
+        }
+
       }
       .left-list {
 
-        @include ABSOLUTELY( 1vmin, auto, auto, 0px );
+        @include ABSOLUTELY( 0px, auto, auto, 0px );
 
       }
 
       .right-list {
 
-        @include ABSOLUTELY( 1vmin, 0px, auto, auto );
+        @include ABSOLUTELY( 0px, 0px, auto, auto );
 
       }
 
@@ -60,7 +74,7 @@
 
       @include FLEXED( column, center, center );
       background: $TRANSPARENT;
-      height: $PROJ_ITEM_HEIGHT;
+      height: 100%;
       padding: 1vw;
       font-size: 1.4vw;
       transition: all .5s ease;
@@ -91,14 +105,14 @@
 
     .left-list {
 
-      @include ABSOLUTELY( 1vmin, auto, auto, -1/3 * $PROJ_ITEM_WIDTH );
+      @include ABSOLUTELY( 0px, auto, auto, -1/3 * $PROJ_ITEM_WIDTH );
       width: 1/3 * $PROJ_ITEM_WIDTH;
 
     }
 
     .right-list {
 
-      @include ABSOLUTELY( 1vmin, -1/3 * $PROJ_ITEM_WIDTH, auto, auto );
+      @include ABSOLUTELY( 0px, -1/3 * $PROJ_ITEM_WIDTH, auto, auto );
       width: 1/3 * $PROJ_ITEM_WIDTH;
 
     }
@@ -129,7 +143,7 @@
 
         p {
 
-          @include ABSOLUTELY( 1vmin, auto, auto, 1/3 * $SS_PROJ_ITEM_WIDTH );
+          @include ABSOLUTELY( 0px, auto, auto, 1/3 * $SS_PROJ_ITEM_WIDTH );
           &.one-third {
 
             transition: all .5s ease;
@@ -141,13 +155,13 @@
         }
         .left-list {
 
-          @include ABSOLUTELY( 1vmin, auto, auto, 0px );
+          @include ABSOLUTELY( 0px, auto, auto, 0px );
 
         }
 
         .right-list {
 
-          @include ABSOLUTELY( 1vmin, 0px, auto, auto );
+          @include ABSOLUTELY( 0px, 0px, auto, auto );
 
         }
 
@@ -193,14 +207,14 @@
 
       .left-list {
 
-        @include ABSOLUTELY( 1vmin, auto, auto, -1/3 * $SS_PROJ_ITEM_WIDTH );
+        @include ABSOLUTELY( 0px, auto, auto, -1/3 * $SS_PROJ_ITEM_WIDTH );
         width: 1/3 * $SS_PROJ_ITEM_WIDTH;
 
       }
 
       .right-list {
 
-        @include ABSOLUTELY( 1vmin, -1/3 * $SS_PROJ_ITEM_WIDTH, auto, auto );
+        @include ABSOLUTELY( 0px, -1/3 * $SS_PROJ_ITEM_WIDTH, auto, auto );
         width: 1/3 * $SS_PROJ_ITEM_WIDTH;
 
       }

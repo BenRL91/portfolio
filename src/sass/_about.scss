@@ -13,21 +13,39 @@
 
     min-width: $ABOUT_WIDTH;
     max-width: $ABOUT_WIDTH;
-    border: 1px solid black;
+    border: 3px solid black;
     height: auto;
-    // margin: auto;
-
+    &.contact-icon {
+      height: $ICON_SIZE;
+      min-width: $ICON_SIZE;
+      border: 0;
+      &:first-child{
+        position: relative;
+        left: .7vw;
+      }
+      &:nth-child(2){
+        height: 5.2vw;
+        min-width: 5.2vw;
+      }
+      &:nth-child(3){
+        height: 4vw;
+        min-width: 4vw;
+      }
+      &:nth-child(4){
+        height: 3.4vw;
+        min-width: 3.4vw;
+      }
+    }
 
   }
   p {
 
-    min-width: $ABOUT_WIDTH;
     max-width: 90vw;
     display: inline-flex;
     align-items: center;
     font-size: 2.5vmin;
     text-align: justify;
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 3vmin;
     // margin: 5vw 0vw;
 
@@ -54,8 +72,11 @@
         max-width: $ABOUT_WIDTH;
         border: 1px solid black;
         height: auto;
-        // margin: auto;
-
+        &.contact-icon {
+          height: $ICON_SIZE;
+          min-width: $ICON_SIZE;
+          border: 0;
+        }
 
       }
       p {

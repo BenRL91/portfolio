@@ -18,13 +18,13 @@ nav {
     width: 2.7vw;
     min-width: 35px;
     background: darkgray;
-    margin-left: 2vw;
-    margin-right: 10vw;
+    margin-left: 3vw;
+    // margin-right: 10vw;
     padding: 1vh 1vh;
     border: 1px solid white;
   }
 
-  a {
+  a.navlink {
 
     color: $COLOR_LIGHT;
     text-decoration: none;

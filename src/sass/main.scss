@@ -3,6 +3,7 @@
 @import '_home';
 @import '_about';
 @import '_portfolio';
+@import 'font-awesome';
 
 * {
  -webkit-box-sizing: border-box;
@@ -19,12 +20,21 @@
   min-width: $VIEW_WIDTH;
   min-height: $VIEW_HEIGHT;
   max-height: $VIEW_HEIGHT;
+  background-color: lighten($COLOR_DRK, 90%);
   margin: 0 auto;
   overflow-y: hidden;
   overflow-x: hidden;
+  a {
+    text-decoration: none;
+    color: black;
+  }
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+}
+i {
+  height: 40px;
+  width: 40px;
 }

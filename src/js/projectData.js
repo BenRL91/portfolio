@@ -13,7 +13,7 @@
   },
   {
     title: 'LIFTERI',
-    image_url: 'images/lifteri.png',
+    image_url: 'images/hint-pic.png',
     alt_text: 'image of the lifteri application',
     description: 'An ridesharing app. Get where you want to go for less.',
     team: ['Front End: Ben Lee, Brittany Andrews', 'Back End: Patrick Macleavy, Tony Nguyen'],
@@ -24,7 +24,7 @@
   },
   {
     title: 'LIFTERI',
-    image_url: 'images/lifteri.png',
+    image_url: 'images/pong.png',
     alt_text: 'image of the lifteri application',
     description: 'An ridesharing app. Get where you want to go for less.',
     team: ['Front End: Ben Lee, Brittany Andrews', 'Back End: Patrick Macleavy, Tony Nguyen'],
@@ -35,7 +35,7 @@
   },
   {
     title: 'LIFTERI',
-    image_url: 'images/lifteri.png',
+    image_url: 'images/contact.png',
     alt_text: 'image of the lifteri application',
     description: 'An ridesharing app. Get where you want to go for less.',
     team: ['Front End: Ben Lee, Brittany Andrews', 'Back End: Patrick Macleavy, Tony Nguyen'],
@@ -46,7 +46,7 @@
   },
   {
     title: 'LIFTERI',
-    image_url: 'images/lifteri.png',
+    image_url: 'images/skinny-ties.png',
     alt_text: 'image of the lifteri application',
     description: 'An ridesharing app. Get where you want to go for less.',
     team: ['Front End: Ben Lee, Brittany Andrews', 'Back End: Patrick Macleavy, Tony Nguyen'],

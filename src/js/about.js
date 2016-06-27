@@ -6,7 +6,9 @@ export default class About extends Component {
     return (
       <div className='about-wrapper'>
         <div className='info-wrapper'>
-          <img src='./images/benbw2.jpg' alt='Photo of Benjamin Lee'/>
+          <div className='contact-wrapper'>
+            <img src='./images/benbw2.jpg' alt='Photo of Benjamin Lee'/>
+          </div>
           <p>
           Prior to code I was a blue collar worker getting by performing manual labor.
           Realizing that no matter where I went I always tried to solve problems with my mind rather than my body, I decided to learn how to program.

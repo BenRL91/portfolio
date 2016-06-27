@@ -1,0 +1,81 @@
+.home-wrapper {
+  overflow: hidden;
+  .hero {
+
+    @include FLEXED( row, center, center );
+    min-height:      $VIEW_HEIGHT;
+    max-height:      $VIEW_HEIGHT;
+    min-width:       $VIEW_WIDTH;
+    max-width:       $VIEW_WIDTH;
+    background-size: $VIEW_WIDTH $VIEW_HEIGHT;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    position: relative;
+
+    .three-ds {
+      @include FLEXED( row, center, center );
+      flex-wrap: nowrap;
+      position: relative;
+      z-index: 999;
+      font-size: 6vw;
+      color: $COLOR_LIGHT;
+      white-space: nowrap;
+    }
+
+    div.code {
+
+      @extend .hero;
+      background-image: url('../images/code.png');
+      position: absolute;
+      z-index: 0;
+      opacity: .4;
+      width: 100vw;
+      left: 0;
+
+    }
+  }
+
+}
+
+@media ( max-width: 550px ) {
+
+  .home-wrapper {
+    overflow: hidden;
+    .hero {
+
+      @include FLEXED( row, center, center );
+      min-height:      $VIEW_HEIGHT;
+      max-height:      $VIEW_HEIGHT;
+      min-width:       $VIEW_WIDTH;
+      max-width:       $VIEW_WIDTH;
+      background-size: $VIEW_WIDTH $VIEW_HEIGHT;
+      background-image: url('../images/background.png');
+      background-repeat: no-repeat;
+      position: relative;
+
+      .three-ds {
+        @include FLEXED( row, center, center );
+        flex-wrap: nowrap;
+        position: relative;
+        z-index: 999;
+        font-size: 15vw;
+        color: $COLOR_LIGHT;
+        white-space: normal;
+        text-align: center;
+      }
+
+      div.code {
+
+        background-image: url('../images/code.png');
+        position: absolute;
+        z-index: 0;
+        opacity: .4;
+        width: 100vw;
+        left: 0;
+
+      }
+    }
+
+  }
+
+}

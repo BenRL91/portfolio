@@ -1,0 +1,211 @@
+.overflow-wrapper {
+  height: $VIEW_HEIGHT;
+  width: $VIEW_WIDTH;
+  overflow: scroll;
+}
+
+
+.portfolio-wrapper {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .project-wrapper {
+
+    @include FLEXED( column, center, center );
+    width: $PROJ_ITEM_WIDTH;
+    margin: 5vmin auto;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+
+      .one-third {
+
+        transition: all .5s ease;
+
+      }
+
+      p {
+
+        @include ABSOLUTELY( 1vmin, auto, auto, 1/3 * $PROJ_ITEM_WIDTH );
+        &.one-third {
+
+          transition: all .5s ease;
+
+        }
+      }
+      div {
+        @include ABSOLUTELY( auto, auto, 0px, 1/3 * $PROJ_ITEM_WIDTH );
+      }
+      .left-list {
+
+        @include ABSOLUTELY( 1vmin, auto, auto, 0px );
+
+      }
+
+      .right-list {
+
+        @include ABSOLUTELY( 1vmin, 0px, auto, auto );
+
+      }
+
+    }
+
+    img {
+
+      width: $PROJ_ITEM_WIDTH;
+
+    }
+    .one-third {
+
+      @include FLEXED( column, center, center );
+      background: $TRANSPARENT;
+      height: $PROJ_ITEM_HEIGHT;
+      padding: 1vw;
+      font-size: 1.4vw;
+      transition: all .5s ease;
+
+
+    }
+    p {
+
+      margin: 0;
+      @include ABSOLUTELY( -20vw, auto, auto, 1/3 * $PROJ_ITEM_WIDTH );
+      width: 1/3 * $PROJ_ITEM_WIDTH;
+      transition: all .5s ease;
+      &.one-third {
+        height: 1/2 * $PROJ_ITEM_HEIGHT;
+      }
+
+    }
+    div {
+
+      @include ABSOLUTELY( auto, auto, -20vw, 1/3 * $PROJ_ITEM_WIDTH );
+      width: 1/3 * $PROJ_ITEM_WIDTH;
+      transition: all .5s ease;
+      &.one-third {
+        height: 1/2 * $PROJ_ITEM_HEIGHT;
+      }
+
+    }
+
+    .left-list {
+
+      @include ABSOLUTELY( 1vmin, auto, auto, -1/3 * $PROJ_ITEM_WIDTH );
+      width: 1/3 * $PROJ_ITEM_WIDTH;
+
+    }
+
+    .right-list {
+
+      @include ABSOLUTELY( 1vmin, -1/3 * $PROJ_ITEM_WIDTH, auto, auto );
+      width: 1/3 * $PROJ_ITEM_WIDTH;
+
+    }
+
+  }
+
+}
+
+@media (max-width: 550px) {
+  .portfolio-wrapper{
+
+    @include FLEXED( column, center, center );
+
+    .project-wrapper {
+
+      @include FLEXED( column, center, center );
+      width: $SS_PROJ_ITEM_WIDTH;
+      margin: 5vmin auto;
+      position: relative;
+      overflow: hidden;
+      &:hover {
+
+        .one-third {
+
+          transition: all .5s ease;
+
+        }
+
+        p {
+
+          @include ABSOLUTELY( 1vmin, auto, auto, 1/3 * $SS_PROJ_ITEM_WIDTH );
+          &.one-third {
+
+            transition: all .5s ease;
+
+          }
+        }
+        div {
+          @include ABSOLUTELY( auto, auto, 0px, 1/3 * $SS_PROJ_ITEM_WIDTH );
+        }
+        .left-list {
+
+          @include ABSOLUTELY( 1vmin, auto, auto, 0px );
+
+        }
+
+        .right-list {
+
+          @include ABSOLUTELY( 1vmin, 0px, auto, auto );
+
+        }
+
+      }
+
+      img {
+
+        width: $SS_PROJ_ITEM_WIDTH;
+
+      }
+      .one-third {
+
+        @include FLEXED( column, center, center );
+        background: $TRANSPARENT;
+        height: $PROJ_ITEM_HEIGHT;
+        padding: 1vw;
+        font-size: 1.4vw;
+        transition: all .5s ease;
+
+
+      }
+      p {
+
+        margin: 0;
+        @include ABSOLUTELY( -20vw, auto, auto, 1/3 * $SS_PROJ_ITEM_WIDTH );
+        width: 1/3 * $SS_PROJ_ITEM_WIDTH;
+        transition: all .5s ease;
+        &.one-third {
+          height: 1/2 * $PROJ_ITEM_HEIGHT;
+        }
+
+      }
+      div {
+
+        @include ABSOLUTELY( auto, auto, -20vw, 1/3 * $SS_PROJ_ITEM_WIDTH );
+        width: 1/3 * $SS_PROJ_ITEM_WIDTH;
+        transition: all .5s ease;
+        &.one-third {
+          height: 1/2 * $PROJ_ITEM_HEIGHT;
+        }
+
+      }
+
+      .left-list {
+
+        @include ABSOLUTELY( 1vmin, auto, auto, -1/3 * $SS_PROJ_ITEM_WIDTH );
+        width: 1/3 * $SS_PROJ_ITEM_WIDTH;
+
+      }
+
+      .right-list {
+
+        @include ABSOLUTELY( 1vmin, -1/3 * $SS_PROJ_ITEM_WIDTH, auto, auto );
+        width: 1/3 * $SS_PROJ_ITEM_WIDTH;
+
+      }
+
+    }
+
+}
+}

@@ -1,0 +1,41 @@
+$VIEW_WIDTH: 100vw;
+
+$VIEW_HEIGHT: 100vh;
+
+$COLOR_DRK: black;
+
+$COLOR_LIGHT: white;
+
+$FONT_COLOR: red;
+
+$FONT_STACK: 'arial', 'helvetica', 'sans-serif';
+
+$ABOUT_WIDTH: 40vw;
+
+$PROJ_ITEM_HEIGHT: 100%;
+
+$PROJ_ITEM_WIDTH: 45vw;
+
+$SS_PROJ_ITEM_WIDTH: 60vw;
+
+$TRANSPARENT: rgba(134, 131, 129, 0.5);
+
+@mixin FLEXED( $dir, $hor, $vert){
+
+  display: flex;
+  flex-direction:  $dir;
+  justify-content: $hor;
+  align-items:     $vert;
+  align-content:   $vert;
+
+}
+
+@mixin ABSOLUTELY( $top, $right, $bottom, $left ){
+
+  position: absolute;
+  top:    $top;
+  right:  $right;
+  bottom: $bottom;
+  left:   $left;
+
+}

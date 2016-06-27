@@ -1,0 +1,5 @@
+const SKILLS = {
+
+}
+
+export SKILLS;

@@ -1,0 +1,19 @@
+import React, { Component, PropTypes } from 'react';
+
+export default class About extends Component {
+
+  render() {
+    return (
+      <div className='about-wrapper'>
+        <div className='info-wrapper'>
+          <img src='./images/benbw2.jpg' alt='Photo of Benjamin Lee'/>
+          <p>
+          Prior to code I was a blue collar worker getting by performing manual labor.
+          Realizing that no matter where I went I always tried to solve problems with my mind rather than my body, I decided to learn how to program.
+          Since acquiring this skill, which I've come to thoroughly enjoy, the tech world has become a place I want to spend my time to which I also want to contribute my knowledge.
+          </p>
+        </div>
+      </div>
+    )
+  }
+}

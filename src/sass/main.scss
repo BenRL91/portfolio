@@ -1,0 +1,30 @@
+@import '_variables';
+@import '_navbar';
+@import '_home';
+@import '_about';
+@import '_portfolio';
+
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ &:visited {
+   color: $COLOR_LIGHT;
+ }
+}
+
+.app {
+  font-family: $FONT_STACK;
+  max-width: $VIEW_WIDTH;
+  min-width: $VIEW_WIDTH;
+  min-height: $VIEW_HEIGHT;
+  max-height: $VIEW_HEIGHT;
+  margin: 0 auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

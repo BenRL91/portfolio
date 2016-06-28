@@ -29,7 +29,7 @@
 
         @include ABSOLUTELY( 0px, auto, auto, 1/3 * $PROJ_ITEM_WIDTH );
         &.one-third {
-
+          font-size: 1.2vw;
           transition: all .5s ease;
 
         }
@@ -70,6 +70,7 @@
       width: $PROJ_ITEM_WIDTH;
 
     }
+
     .one-third {
 
       @include FLEXED( column, center, center );
@@ -81,6 +82,7 @@
 
 
     }
+
     p {
 
       margin: 0;
@@ -92,6 +94,7 @@
       }
 
     }
+
     div {
 
       @include ABSOLUTELY( auto, auto, -20vw, 1/3 * $PROJ_ITEM_WIDTH );
@@ -149,10 +152,13 @@
             transition: all .5s ease;
 
           }
+
         }
+
         div {
           @include ABSOLUTELY( auto, auto, 0px, 1/3 * $SS_PROJ_ITEM_WIDTH );
         }
+
         .left-list {
 
           @include ABSOLUTELY( 0px, auto, auto, 0px );
@@ -172,6 +178,7 @@
         width: $SS_PROJ_ITEM_WIDTH;
 
       }
+
       .one-third {
 
         @include FLEXED( column, center, center );
@@ -183,6 +190,7 @@
 
 
       }
+
       p {
 
         margin: 0;
@@ -194,13 +202,16 @@
         }
 
       }
+
       div {
 
         @include ABSOLUTELY( auto, auto, -20vw, 1/3 * $SS_PROJ_ITEM_WIDTH );
         width: 1/3 * $SS_PROJ_ITEM_WIDTH;
         transition: all .5s ease;
         &.one-third {
+
           height: 1/2 * $PROJ_ITEM_HEIGHT;
+
         }
 
       }
@@ -221,5 +232,6 @@
 
     }
 
-}
+  }
+
 }

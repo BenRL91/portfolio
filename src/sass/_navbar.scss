@@ -1,27 +1,28 @@
 nav {
 
-  @include FLEXED( row, space-between, center );
+  @include FLEXED( row, space-around, center );
   position: relative;
   z-index: 2;
   background: black;
   height: 7vh;
   font-size: 2.2vw;
-
-  // span {
-  //   color: $COLOR_LIGHT;
-  //   font-size: 1.5em;
-  //   margin-left: 2%;
-  // }
   img {
+    &:first-child(){
+      margin-left: 3vw;
+    }
     height: 2.7vw;
     min-height: 35px;
     width: 2.7vw;
     min-width: 35px;
     background: darkgray;
-    margin-left: 3vw;
-    // margin-right: 10vw;
     padding: 1vh 1vh;
     border: 1px solid white;
+  }
+  div {
+    height: 2.7vw;
+    min-height: 35px;
+    width: 2.7vw;
+    min-width: 35px;
   }
 
   a.navlink {

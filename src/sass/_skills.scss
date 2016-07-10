@@ -1,0 +1,32 @@
+.skills-wrapper {
+
+  .skill-chart {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100vh;
+
+    .skill {
+
+      display: inline-flex;
+      padding-top: 2vw;
+      align-items: center;
+      flex-direction: column;
+      width: 9vw;
+      font-size: 1.5vmax;
+      border: 5px solid black;
+      transition: all 1s ease;
+
+      span {
+
+        display: block;
+        // max-width: 2vw;
+
+      }
+
+    }
+
+  }
+
+}

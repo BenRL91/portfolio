@@ -14,6 +14,7 @@ export default class Navbar extends Component {
           <Link className='navlink' to='/about'>About</Link>
           <Link className='navlink' to='/portfolio'>Portfolio</Link>
           <Link className='navlink' to='/skills'>Skills</Link>
+          <Link className='navlink' to='/contact'>Contact</Link>
         </nav>
 
     )

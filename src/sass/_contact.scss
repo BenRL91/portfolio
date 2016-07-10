@@ -1,0 +1,21 @@
+.contacts-wrapper {
+  @include FLEXED(column, center, center);
+  height: 100vh;
+  .contacts-border {
+    @extend .contacts-wrapper;
+    height: auto;
+    border: 1.5vmax solid black;
+    padding: 2vw;
+    div a {
+      height: 40px;
+      font-size: 5vmax;
+      &:hover {
+        color: lighten(black, 30%);
+      }
+    }
+    div span {
+      height: 40px;
+      font-size: 5vmax;
+    }
+  }
+}

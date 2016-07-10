@@ -6,6 +6,7 @@ import Home from './home';
 import About from './about';
 import Portfolio from './portfolio';
 import Skills from './skills';
+import Contact from './contact';
 
 render((
   <Router history={hashHistory}>
@@ -14,6 +15,7 @@ render((
         <Route path='/about'     component={ About }/>
         <Route path='/portfolio' component={ Portfolio }/>
         <Route path='/skills'    component={ Skills }/>
+        <Route path='/contact'   component={ Contact }/>
       </Route>
   </Router>
 ), document.querySelector('.app'));

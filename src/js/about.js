@@ -7,7 +7,7 @@ export default class About extends Component {
       <div className='about-wrapper'>
         <div className='info-wrapper'>
           <div className='contact-wrapper'>
-            <img src='./images/benbw2.jpg' alt='Photo of Benjamin Lee'/>
+            <img src='./images/benbw4.jpg' alt='Photo of Benjamin Lee'/>
           </div>
           <p>
           Prior to code I was a blue collar worker getting by performing manual labor.

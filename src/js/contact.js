@@ -7,7 +7,7 @@ export default class Contact extends Component {
       <div className='contacts-wrapper'>
         <div className='contacts-border'>
           <div className='github-contact'>
-            <a href= 'http://www.github.com/BenRL91'>Link to Github</a>
+            <a href= 'http://www.github.com/BenRL91'>Link to My Github</a>
           </div>
           <div className='phone-contact'>
             <span>862-432-6657</span>

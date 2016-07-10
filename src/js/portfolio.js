@@ -19,13 +19,29 @@ export default class Portfolio extends Component {
          <a href={ project.github_url }>See the Code</a>
         </div>
         <ul className='left-list one-third'>
-          { team.map( this.createList ) }
+          <li className='team-list'>
+           <span className='team-type'>Front End:</span>
+           { team[`Front End`].map( this.createTeam ) }
+          </li>
+          <br/>
+          <li className='team-list'>
+           <span className='team-type'>Back End:</span>
+           { team[`Back End`].map( this.createTeam ) }
+          </li>
         </ul>
         <ul className='right-list one-third'>
           { skillset.map( this.createList ) }
         </ul>
       </div>
       )
+  }
+  createTeam( listItem, id ){
+    return (
+        <span key={ id }>
+          { listItem }
+        </span>
+
+    )
   }
   createList( listItem, id, skillset ){
 

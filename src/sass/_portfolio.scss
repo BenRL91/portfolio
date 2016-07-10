@@ -2,6 +2,7 @@
   height: $VIEW_HEIGHT - 10vh;
   width:  $VIEW_WIDTH;
   overflow: scroll;
+  color: $COLOR-LIGHT;
 }
 
 
@@ -22,13 +23,13 @@
       .one-third {
 
         transition: all .5s ease;
-
       }
 
       p {
 
         @include ABSOLUTELY( 0px, auto, auto, 1/3 * $PROJ_ITEM_WIDTH );
         &.one-third {
+          text-align: center;
           font-size: 1.2vw;
           transition: all .5s ease;
 
@@ -39,6 +40,7 @@
         a {
 
           transition: all .2s linear;
+          color: $COLOR_LIGHT;
 
         &:hover {
 
@@ -54,6 +56,14 @@
       .left-list {
 
         @include ABSOLUTELY( 0px, auto, auto, 0px );
+        .team-list{
+          @include FLEXED(column, center, center);
+          .team-type {
+           font-size: 1.6vw;
+          }
+        }
+        font-size: 1.2vw;
+
 
       }
 
@@ -110,6 +120,13 @@
 
       @include ABSOLUTELY( 0px, auto, auto, -1/3 * $PROJ_ITEM_WIDTH );
       width: 1/3 * $PROJ_ITEM_WIDTH;
+      .team-list{
+        @include FLEXED(column, center, center);
+        .team-type {
+           font-size: 1.6vw;
+        }
+      }
+      font-size: 1.2vw;
 
     }
 
@@ -162,6 +179,13 @@
         .left-list {
 
           @include ABSOLUTELY( 0px, auto, auto, 0px );
+          .team-list{
+            @include FLEXED(column, center, center);
+            .team-type {
+           font-size: 1.6vw;
+            }
+          }
+          font-size: 1.2vw;
 
         }
 
@@ -219,6 +243,12 @@
       .left-list {
 
         @include ABSOLUTELY( 0px, auto, auto, -1/3 * $SS_PROJ_ITEM_WIDTH );
+        .team-list{
+          @include FLEXED(column, center, center);
+          .team-type {
+           font-size: 1.6vw;
+          }
+        }
         width: 1/3 * $SS_PROJ_ITEM_WIDTH;
 
       }

@@ -37,7 +37,7 @@ let skills = [
   },
   {
     skill: 'Angular',
-    height: 40,
+    height: 70,
     backgroundColor: 'indigo',
     id: 6
   },

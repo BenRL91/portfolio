@@ -66,7 +66,7 @@
     demo_url: 'http://benrl91.github.io/wknd_proj_1/',
     github_url: 'http://github.com/BenRL91/',
     id: 5
-  },
+  }
   // {
   //   title: 'LIFTERI',
   //   image_url: 'images/lifteri.png',

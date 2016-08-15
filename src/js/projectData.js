@@ -66,18 +66,20 @@
     demo_url: 'http://benrl91.github.io/wknd_proj_1/',
     github_url: 'http://github.com/BenRL91/',
     id: 5
+  },
+  {
+    title: 'Instagram Clone',
+    image_url: 'images/imgstagram.png',
+    alt_text: 'image the instagram clone application',
+    description: 'A simple image host that tracks likes and comments.',
+    team: {'Front End': ['Ben Lee'],
+           'Back End': ['Tim Whitacre']
+         },
+    skillset: ['Angular', 'Angular UI-Router', 'SASS'],
+    demo_url: 'http://tiy-benlee-instagram-clone.surge.sh',
+    github_url: 'https://github.com/BenRL91/instagram-clone',
+    id: 6
   }
-  // {
-  //   title: 'LIFTERI',
-  //   image_url: 'images/lifteri.png',
-  //   alt_text: 'image of the lifteri application',
-  //   description: 'Created a pixel perfect replication of a web page.',
-  //   team: ['Front End: Ben Lee, Brittany Andrews', 'Back End: Patrick Macleavy, Tony Nguyen'],
-  //   skillset: ['React', 'Google Places', 'SASS', 'AJAX' ],
-  //   demo_url: 'http://google.com/',
-  //   github_url: 'http://github.com/BenRL91/',
-  //   id: 6
-  // }
 
 ];
 export default PROJECTS;

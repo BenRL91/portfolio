@@ -2,8 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import skills from './skillsData';
 
 let that;
-// const COLORS = ['#e8623c', '#098aa4', '#82bebf'];
-const COLORS = ['grey', 'lightgrey', 'darkgrey']
+const COLORS = ['#e8623c', '#098aa4', '#82bebf'];
+// const COLORS = ['grey', 'lightgrey', 'darkgrey']
 export default class Skills extends Component {
 
 constructor( ...args ){
@@ -14,6 +14,7 @@ constructor( ...args ){
      sortedSkills: skills.sort(that.compare)
   }
 }
+
 compare( skill_one, skill_two ) {
  if ( skill_one.height > skill_two.height ) {
    return -1;
@@ -23,10 +24,12 @@ compare( skill_one, skill_two ) {
  }
  return 0;
 }
+
  addBackgroundColor(skill){
    let x = that.state.sortedSkills.indexOf(skill);
    return COLORS[x % 3];
  }
+
  chartSkill( skill ){
    let x = 0;
 
@@ -50,7 +53,8 @@ compare( skill_one, skill_two ) {
      </div>
    )
  }
-  revealChart(){
+
+ revealChart(){
 
    that.timeoutID = setTimeout( function(){
 
@@ -61,9 +65,11 @@ compare( skill_one, skill_two ) {
    }, 500 )
 
  }
+
   componentDidMount(){
     that.revealChart();
   }
+
   render() {
     let { sortedSkills } = that.state;
     console.log('i am rendering')
